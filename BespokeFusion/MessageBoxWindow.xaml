@@ -37,24 +37,25 @@
         </ResourceDictionary>
     </metro:MetroWindow.Resources>
 
-    <Grid>
+    <Grid Name="MainContentControl" x:FieldModifier="public">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" x:Name="IndicatorPanel" Background="{DynamicResource AccentColorBrush}">
+        <Grid Grid.Row="0" x:Name="TitleBackgroundPanel" x:FieldModifier="public" Background="{DynamicResource AccentColorBrush}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image Source="Assets/Notification.png" Height="30"/>
-            <TextBlock Name="TxtTitle" Grid.Column="1" Foreground="White" Text="Title" VerticalAlignment="Center" FontWeight="Medium" Margin="24,6"/>
+            <!--<Image x:FieldModifier="public" Name="MessageBoxIcon" Source="Assets/Notification.png" Stretch="UniformToFill" Width="30" Margin="6,0,0,0" Height="30"/>-->
+            <materialDesign:PackIcon Kind="MessageText" Foreground="{DynamicResource MaterialDesignPaper}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="6,0,6,0"/>
+            <TextBlock Name="TxtTitle" x:FieldModifier="public" Grid.Column="1" Foreground="White" Text="Title" VerticalAlignment="Center" FontWeight="Medium" Margin="0,6,6,6"/>
         </Grid>
 
-        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-            <TextBlock Name="TxtMessage" MinHeight="100" Text="Message" TextWrapping="Wrap" Padding="3" VerticalAlignment="Top" Foreground="Black" FontWeight="Normal" Margin="24,12"/>
+        <ScrollViewer Name="MessageControl" x:FieldModifier="public" Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:FieldModifier="public" Name="TxtMessage" MinHeight="100" Text="Message" TextWrapping="Wrap" Padding="3" VerticalAlignment="Top" Foreground="Black" FontWeight="Normal" Margin="24,12"/>
         </ScrollViewer>
 
         <Grid Grid.Row="2" Margin="24,12">
@@ -62,13 +63,13 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
-            <Button Name="BtnCopyMessage" Click="BtnCopyMessage_OnClick" Grid.Column="0" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="SlateGray" Background="White" ToolTip="Copy to clipbopard" HorizontalAlignment="Left" Margin="0" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}">
+
+            <Button x:FieldModifier="public"  Name="BtnCopyMessage" Click="BtnCopyMessage_OnClick" Grid.Column="0" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="SlateGray" Background="White" ToolTip="Copy to clipbopard" HorizontalAlignment="Left" Margin="0" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}">
                 <materialDesign:PackIcon Kind="ContentCopy" Foreground="SlateGray"/>
             </Button>
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Name="BtnOk" Click="BtnOk_OnClick" Foreground="{DynamicResource MaterialDesignPaper}"  Content="Ok" Width="100" Padding="24,5" />
-                <Button Name="BtnCancel" Click="BtnCancel_OnClick" Content="Cancel"  Foreground="{DynamicResource MaterialDesignPaper}" Width="100" Background="DimGray" Padding="24,5" Margin="24,0,0,0"/>
+                <Button x:FieldModifier="public"  Name="BtnOk" Click="BtnOk_OnClick" Foreground="{DynamicResource MaterialDesignPaper}"  Content="Ok" Width="100" Padding="24,5" />
+                <Button x:FieldModifier="public"  Name="BtnCancel" Click="BtnCancel_OnClick" Content="Cancel"  Foreground="{DynamicResource MaterialDesignPaper}" Width="100" Background="DimGray" Padding="24,5" Margin="24,0,0,0"/>
             </StackPanel>
             </Grid>
     </Grid>    

@@ -4,21 +4,21 @@ using System.Windows.Media;
 
 namespace BespokeFusion
 {
-    public class MessageBoxHelper
+    public sealed class MaterialMessageBox
     {
-        private const string MessageBoxTitle = "Message Box";
+        private const string MessageBoxTitle = "Message";
 
         /// <summary>
         /// Displays a message box with OK button
         /// </summary>
         /// <param name="message">The message to display</param>
-        public void Show(string message)
+        public static void Show(string message)
         {
             using (var msg = new MessageBoxWindow())
             {
                 msg.TxtTitle.Text = MessageBoxTitle;
                 msg.TxtMessage.Text = message;
-                msg.IndicatorPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                 msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                 msg.BtnCancel.Visibility = Visibility.Collapsed;
 
@@ -32,13 +32,13 @@ namespace BespokeFusion
         /// </summary>
         /// <param name="message">The message to display</param>
         /// <param name="title">The title of the message box</param>
-        public void Show(string message, string title)
+        public static void Show(string message, string title)
         {
             using (var msg = new MessageBoxWindow())
             {
                 msg.TxtTitle.Text = title;
                 msg.TxtMessage.Text = message;
-                msg.IndicatorPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                 msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                 msg.BtnCancel.Visibility = Visibility.Collapsed;
 
@@ -51,7 +51,7 @@ namespace BespokeFusion
         /// Displays an error message box
         /// </summary>
         /// <param name="errorMessage">The error error message to display</param>
-        public void ShowError(string errorMessage)
+        public static void ShowError(string errorMessage)
         {
             try
             {
@@ -59,7 +59,7 @@ namespace BespokeFusion
                 {
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = errorMessage;
-                    msg.IndicatorPanel.Background = Brushes.Red;
+                    msg.TitleBackgroundPanel.Background = Brushes.Red;
                     msg.BorderBrush = Brushes.Red;
                     msg.BtnCancel.Visibility = Visibility.Collapsed;
 
@@ -78,7 +78,7 @@ namespace BespokeFusion
         /// </summary>
         /// <param name="message">The message to display</param>
         /// <returns>Message box Result OK or CANCEL</returns>
-        public MessageBoxResult ShowWithCancel(string message)
+        public static MessageBoxResult ShowWithCancel(string message)
         {
             try
             {
@@ -86,7 +86,7 @@ namespace BespokeFusion
                 {
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = message;
-                    msg.IndicatorPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                     msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
 
                     msg.BtnOk.Focus();
@@ -107,7 +107,7 @@ namespace BespokeFusion
         /// <param name="message">The message to display</param>
         /// <param name="title">The title of the message box</param>
         /// <returns>Message box Result OK or CANCEL</returns>
-        public MessageBoxResult ShowWithCancel(string message, string title)
+        public static MessageBoxResult ShowWithCancel(string message, string title)
         {
             try
             {
@@ -115,7 +115,7 @@ namespace BespokeFusion
                 {
                     msg.TxtTitle.Text = title;
                     msg.TxtMessage.Text = message;
-                    msg.IndicatorPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                     msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
 
                     msg.BtnOk.Focus();
@@ -136,7 +136,7 @@ namespace BespokeFusion
         /// <param name="message">The message to display</param>
         /// <param name="isError">If the message is an error</param>
         /// <returns>Message box Result OK or CANCEL</returns>
-        public MessageBoxResult ShowWithCancel(string message, bool isError)
+        public static MessageBoxResult ShowWithCancel(string message, bool isError)
         {
             try
             {
@@ -144,7 +144,7 @@ namespace BespokeFusion
                 {
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = message;
-                    msg.IndicatorPanel.Background = isError
+                    msg.TitleBackgroundPanel.Background = isError
                         ? Brushes.Red
                         : new SolidColorBrush(Color.FromRgb(3, 169, 244));
                     msg.BorderBrush = isError 
