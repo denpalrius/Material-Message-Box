@@ -1,8 +1,8 @@
-# :sparkle: Material Message Box
+# Material Message Box
 
 A WPF Message Box implementing material design
 
-[![Release](img.shields.io/github/release/denpalrius/Material-Message-Box.svg)](https://github.com/denpalrius/Material-Message-Box/releases/latest)
+[![Release](https://img.shields.io/github/release/denpalrius/Material-Message-Box.svg)](https://github.com/denpalrius/Material-Message-Box/releases/latest)
 
 :arrow_forward: [Download from Nuget](https://www.nuget.org/packages/MaterialMessageBox/)
 
