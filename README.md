@@ -1,12 +1,10 @@
-![Material Message Box](./BespokeFusion/Assets/Notification-Blue.png)Material Message Box
+#![Material Message Box](https://raw.githubusercontent.com/denpalrius/Material-Message-Box/57596ea36f027d6a8da65dab69fc67c0f4ca739f/BespokeFusion/Assets/Notification-Blue.png)Material Message Box
 
 A WPF Message Box implementing material design
 
 [Download from Nuget](https://www.nuget.org/packages/MaterialMessageBox/)
 
-## Usage
-ddd
-#![Usage](./BespokeFusion/Assets/Notification-Blue.png)Usage
+## !Usage
 
 > Creating a simple message box
 
