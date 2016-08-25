@@ -67,10 +67,15 @@ I have implemented these awesome toolkits while creating this control. Hands up 
 ## Main Features
 The message box has the following custom features:
 :white_check_mark: Material Theme design
+
 :white_check_mark: Custom styles for border window, message foreground and background, title foreground and background, border, etc
+
 :white_check_mark: Button to copy message box details to clipboard
+
 :white_check_mark: Scrollable message box content
+
 :white_check_mark: Message content is .NET UIElement which can host any content
+
 
 
 ----------
