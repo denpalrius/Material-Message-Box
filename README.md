@@ -76,7 +76,7 @@ var results = msg.Result;
 ## :sparkle: Contributing to this project
 If you've improved Material Message Box and think that other people would enjoy it, submit a pull request. Anyone and everyone is welcome to contribute.
 
-* You could always contact me through Email for any feature or issue :simple_smile: :simple_smile:
+* You could always contact me through Email for any feature or issue. :star:
 
 * You need [Visual Studio 2015 Community/Enterprise Edition](<https://www.visualstudio.com/>) to build the solution.
 
@@ -111,3 +111,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
+
+
+
+:heart:
