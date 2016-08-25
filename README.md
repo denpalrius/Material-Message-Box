@@ -1,28 +1,38 @@
-# Material Message Box
+![Material Message Box](./BespokeFusion/Assets/Notification-Blue.png)Material Message Box
 
 A WPF Message Box implementing material design
 
 [Download from Nuget](https://www.nuget.org/packages/MaterialMessageBox/)
 
 ## Usage
+ddd
+#![Usage](./BespokeFusion/Assets/Notification-Blue.png)Usage
+
 > Creating a simple message box
 
 ```c#
 MaterialMessageBox.Show("Your cool message here", "The awesome message title");
 ```
+![Simple Message](./MaterialMessageBoxDemo/Screenshots/Simple Message Box.png)
+
+
 > Showing an error message
 
 ```c#            
 MaterialMessageBox.ShowError(@"This is an error message");
 ```
+![Error Message](./MaterialMessageBoxDemo/Screenshots/Error Message Box.png)
+
 
 > Capturing Message Box Results
 
 ```c#    
 var result = MaterialMessageBox.ShowWithCancel($"This is a simple message with a cancel button. You can listen to the return value", "Message Box Title");
 ```
+![Capturing Message Box Results](./MaterialMessageBoxDemo/Screenshots/Message Box With Cancel Button.png)
 
-> Capturing Message Box Results
+
+> Styling a message box
 
 ```c#    
 var msg = new CustomMaterialMessageBox
@@ -40,6 +50,7 @@ var msg = new CustomMaterialMessageBox
 msg.Show();
 var results = msg.Result;
 ```
+![Capturing Message Box Results](./MaterialMessageBoxDemo/Screenshots/Styled Message Box.png)
 
 
 ## Contributing to this project
