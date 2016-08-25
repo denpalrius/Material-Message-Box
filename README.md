@@ -2,7 +2,26 @@
 
 A WPF Message Box implementing material design
 
-[Download from Nuget](https://www.nuget.org/packages/MaterialMessageBox/)
+[![Release](img.shields.io/github/release/denpalrius/Material-Message-Box.svg)](https://github.com/denpalrius/Material-Message-Box/releases/latest)
+
+:arrow_forward: [Download from Nuget](https://www.nuget.org/packages/MaterialMessageBox/)
+
+:arrow_forward: Install from Package manager Console
+> Install-Package MaterialMessageBox
+
+## :sparkle: Main Features
+The message box has the following custom features:
+
+:white_check_mark: Material Theme design
+
+:white_check_mark: Custom styles for border window, message foreground and background, title foreground and background, border, etc
+
+:white_check_mark: Button to copy message box details to clipboard
+
+:white_check_mark: Scrollable message box content
+
+:white_check_mark: Message content is .NET UIElement which can host any content
+
 
 ## :sparkle: Usage
 
@@ -51,37 +70,23 @@ var results = msg.Result;
 ![Capturing Message Box Results](./MaterialMessageBoxDemo/Screenshots/Styled Message Box.png)
 
 
-## Contributing to this project
+## :sparkle: Contributing to this project
 If you've improved Material Message Box and think that other people would enjoy it, submit a pull request. Anyone and everyone is welcome to contribute.
 
 * You could always contact me through Email for any feature or issue :)
 
 * You need [Visual Studio 2015 Community/Enterprise Edition](<https://www.visualstudio.com/>) to build the solution.
 
-## Toolkits used
+
+## :sparkle: Toolkits used
 I have implemented these awesome toolkits while creating this control. Hands up to these guys who have made the most beautiful controls for WPF. They have crossed the oceans on foot!
 
 - [mahApps.Metro](https://github.com/MahApps/MahApps.Metro) A toolkit for creating Metro/Modern UI styled WPF apps
 - [MaterialDesignInXamlToolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) Google Material Design in XAML & WPF, for C# & VB.Net
 
-## Main Features
-The message box has the following custom features:
-:white_check_mark: Material Theme design
-
-:white_check_mark: Custom styles for border window, message foreground and background, title foreground and background, border, etc
-
-:white_check_mark: Button to copy message box details to clipboard
-
-:white_check_mark: Scrollable message box content
-
-:white_check_mark: Message content is .NET UIElement which can host any content
-
-
-
 ----------
 
-
-## Licence
+## :sparkle: Licence
 The MIT License (MIT)
 
 Copyright (c) Microsoft Corporation
