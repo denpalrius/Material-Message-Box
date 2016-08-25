@@ -9,6 +9,8 @@ A WPF Message Box implementing material design
 :arrow_forward: Install from Package manager Console
 > Install-Package MaterialMessageBox
 
+
+
 ## :sparkle: Main Features
 The message box has the following custom features:
 
@@ -21,6 +23,7 @@ The message box has the following custom features:
 :white_check_mark: Scrollable message box content
 
 :white_check_mark: Message content is .NET UIElement which can host any content
+
 
 
 ## :sparkle: Usage
@@ -73,7 +76,7 @@ var results = msg.Result;
 ## :sparkle: Contributing to this project
 If you've improved Material Message Box and think that other people would enjoy it, submit a pull request. Anyone and everyone is welcome to contribute.
 
-* You could always contact me through Email for any feature or issue :)
+* You could always contact me through Email for any feature or issue :simple_smile: :simple_smile:
 
 * You need [Visual Studio 2015 Community/Enterprise Edition](<https://www.visualstudio.com/>) to build the solution.
 
@@ -89,7 +92,7 @@ I have implemented these awesome toolkits while creating this control. Hands up 
 ## :sparkle: Licence
 The MIT License (MIT)
 
-Copyright (c) Microsoft Corporation
+Copyright (c) 2016, Bespoke Fusion
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
