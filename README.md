@@ -6,9 +6,6 @@ A WPF Message Box implementing material design
 
 ## Usage
 
-#### <i class="icon-file"></i> Usage
-
-
 > Creating a simple message box
 
 ```c#
