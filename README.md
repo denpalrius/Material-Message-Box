@@ -1,10 +1,10 @@
-#Material Message Box
+# :sparkle: Material Message Box
 
 A WPF Message Box implementing material design
 
 [Download from Nuget](https://www.nuget.org/packages/MaterialMessageBox/)
 
-## Usage
+## :sparkle: Usage
 
 > Creating a simple message box
 
@@ -66,11 +66,11 @@ I have implemented these awesome toolkits while creating this control. Hands up 
 
 ## Main Features
 The message box has the following custom features:
- 1. Material Theme design
- 2. Custom styles for border window, message foreground and background, title foreground and background, border, etc
- 3. Button to copy message box details to clipboard
- 4. Scrollable message box content
- 5. Message content is .NET UIElement which can host any content
+:white_check_mark: Material Theme design
+:white_check_mark: Custom styles for border window, message foreground and background, title foreground and background, border, etc
+:white_check_mark: Button to copy message box details to clipboard
+:white_check_mark: Scrollable message box content
+:white_check_mark: Message content is .NET UIElement which can host any content
 
 
 ----------
