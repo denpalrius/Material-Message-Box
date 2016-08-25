@@ -80,6 +80,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Notification-Blue.png" />
     <Content Include="Assets\Notification.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
