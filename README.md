@@ -33,13 +33,7 @@ The message box has the following custom features:
 ```c#
 MaterialMessageBox.Show("Your cool message here", "The awesome message title");
 ```
-<<<<<<< HEAD
 ![Simple Message](./MaterialMessageBoxDemo/Screenshots/Simple Message Box.png?raw=true "Creating a simple message box")
-=======
-
-![Creating a simple message box](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Simple-Message-Box.png?raw=true "Creating a simple message box")
-
->>>>>>> 3c1f42a26f0606388295412bd06586ed293e58e5
 
 > Showing an error message
 
