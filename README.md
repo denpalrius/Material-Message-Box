@@ -34,7 +34,7 @@ The message box has the following custom features:
 MaterialMessageBox.Show("Your cool message here", "The awesome message title");
 ```
 
-![Alt text](/MaterialMessageBoxDemo/Screenshots/Simple Message Box.png?raw=true "Creating a simple message box")
+![Creating a simple message box](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Simple Message Box.png?raw=true "Creating a simple message box")
 
 
 > Showing an error message
@@ -42,7 +42,7 @@ MaterialMessageBox.Show("Your cool message here", "The awesome message title");
 ```c#            
 MaterialMessageBox.ShowError(@"This is an error message");
 ```
-![Error Message](./MaterialMessageBoxDemo/Screenshots/Error Message Box.png)
+![Error Message](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Error Message Box.png)
 
 
 > Capturing Message Box Results
@@ -50,7 +50,7 @@ MaterialMessageBox.ShowError(@"This is an error message");
 ```c#    
 var result = MaterialMessageBox.ShowWithCancel($"This is a simple message with a cancel button. You can listen to the return value", "Message Box Title");
 ```
-![Capturing Message Box Results](./MaterialMessageBoxDemo/Screenshots/Message Box With Cancel Button.png)
+![Capturing Message Box Results](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Message Box With Cancel Button.png)
 
 
 > Styling a message box
@@ -71,7 +71,7 @@ var msg = new CustomMaterialMessageBox
 msg.Show();
 var results = msg.Result;
 ```
-![Capturing Message Box Results](./MaterialMessageBoxDemo/Screenshots/Styled Message Box.png)
+![Capturing Message Box Results](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Styled Message Box.png)
 
 
 ## :sparkle: Contributing to this project
