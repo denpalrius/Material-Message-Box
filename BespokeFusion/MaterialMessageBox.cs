@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Media;
 
@@ -16,6 +16,7 @@ namespace BespokeFusion
         {
             using (var msg = new MessageBoxWindow())
             {
+                msg.Title = MessageBoxTitle;
                 msg.TxtTitle.Text = MessageBoxTitle;
                 msg.TxtMessage.Text = message;
                 msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
@@ -36,6 +37,7 @@ namespace BespokeFusion
         {
             using (var msg = new MessageBoxWindow())
             {
+                msg.Title = title;
                 msg.TxtTitle.Text = title;
                 msg.TxtMessage.Text = message;
                 msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
@@ -57,6 +59,7 @@ namespace BespokeFusion
             {
                 using (var msg = new MessageBoxWindow())
                 {
+                    msg.Title = MessageBoxTitle;
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = errorMessage;
                     msg.TitleBackgroundPanel.Background = Brushes.Red;
@@ -84,6 +87,7 @@ namespace BespokeFusion
             {
                 using (var msg = new MessageBoxWindow())
                 {
+                    msg.Title = MessageBoxTitle;
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = message;
                     msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
@@ -113,6 +117,7 @@ namespace BespokeFusion
             {
                 using (var msg = new MessageBoxWindow())
                 {
+                    msg.Title = title;
                     msg.TxtTitle.Text = title;
                     msg.TxtMessage.Text = message;
                     msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
@@ -142,6 +147,7 @@ namespace BespokeFusion
             {
                 using (var msg = new MessageBoxWindow())
                 {
+                    msg.Title = MessageBoxTitle;
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = message;
                     msg.TitleBackgroundPanel.Background = isError
