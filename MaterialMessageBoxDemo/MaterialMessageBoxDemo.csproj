@@ -119,10 +119,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Screenshots\Error Message Box.png" />
-    <Resource Include="Screenshots\Message Box With Cancel Button.png" />
-    <Resource Include="Screenshots\Simple Message Box.png" />
-    <Resource Include="Screenshots\Styled Message Box.png" />
+    <Resource Include="Screenshots\Error-Message-Box.png" />
+    <Resource Include="Screenshots\Message-Box-With-Cancel-Button.png" />
+    <Resource Include="Screenshots\Simple-Message-Box.png" />
+    <Resource Include="Screenshots\Styled-Message-Box.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
