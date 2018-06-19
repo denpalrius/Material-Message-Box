@@ -89,6 +89,38 @@ namespace BespokeFusion
         }
 
         /// <summary>
+        /// Displays an error message box
+        /// </summary>
+        /// <param name="errorMessage">The error error message to display</param>
+        /// <param name="title">The title of the message box</param>
+        /// <param name="IsRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
+        public static void ShowError(string errorMessage, string title, bool IsRTL = false)
+        {
+            try
+            {
+                using (var msg = new MessageBoxWindow())
+                {
+                    msg.Title = title;
+                    msg.TxtTitle.Text = title;
+                    msg.TxtMessage.Text = errorMessage;
+                    msg.TitleBackgroundPanel.Background = Brushes.Red;
+                    msg.BorderBrush = Brushes.Red;
+                    msg.BtnCancel.Visibility = Visibility.Collapsed;
+                    if (IsRTL)
+                    {
+                        msg.FlowDirection = FlowDirection.RightToLeft;
+                    }
+                    msg.BtnOk.Focus();
+                    msg.ShowDialog();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(errorMessage);
+            }
+        }
+
+        /// <summary>
         /// Displays a message box with a cancel button
         /// </summary>
         /// <param name="message">The message to display</param>
