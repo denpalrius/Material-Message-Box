@@ -61,5 +61,10 @@ namespace MaterialMessageBoxDemo
             var results = msg.Result;
             TxtResult.Text = $"Message Box Result is: {results}";
         }
+
+        private void ShowSimpleRTLMessageBox_OnClick(object sender, RoutedEventArgs e)
+        {
+            MaterialMessageBox.Show($"This is a simple message{Environment.NewLine}هذه رسالة بسيطة{Environment.NewLine}{Environment.NewLine}Is'nt it cool\n.\n.\nYou could even scroll!!!\nd\no\no\no\no\no\nw\nn", "Message Box Title", true);
+        }
     }
 }
