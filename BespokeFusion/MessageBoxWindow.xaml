@@ -65,7 +65,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:FieldModifier="public"  Name="BtnCopyMessage" Click="BtnCopyMessage_OnClick" Grid.Column="0" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="SlateGray" Background="White" ToolTip="Copy to clipbopard" HorizontalAlignment="Left" Margin="0" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}">
+            <Button x:FieldModifier="public"  Name="BtnCopyMessage" Click="BtnCopyMessage_OnClick" Grid.Column="0" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="SlateGray" Background="White" ToolTip="Copy to Clipboard" HorizontalAlignment="Left" Margin="0" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}">
                 <materialDesign:PackIcon Kind="ContentCopy" Foreground="SlateGray"/>
             </Button>
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
