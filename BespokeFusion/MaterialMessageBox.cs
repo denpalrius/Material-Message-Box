@@ -68,8 +68,8 @@ namespace BespokeFusion
             {
                 using (var msg = new MessageBoxWindow())
                 {
-                    msg.Title = MessageBoxTitle;
-                    msg.TxtTitle.Text = MessageBoxTitle;
+                    msg.Title = "Error";
+                    msg.TxtTitle.Text = "Error";
                     msg.TxtMessage.Text = errorMessage;
                     msg.TitleBackgroundPanel.Background = Brushes.Red;
                     msg.BorderBrush = Brushes.Red;
@@ -117,6 +117,89 @@ namespace BespokeFusion
             catch (Exception)
             {
                 MessageBox.Show(errorMessage);
+            }
+        }
+
+        /// <summary>
+        /// Displays an error message box
+        /// </summary>
+        /// <param name="errorMessage">The error error message to display</param>
+        /// <param name="errorTitle">The title of the error message box</param>
+        public static void ShowError(string errorMessage, string errorTitle)
+        {
+            try
+            {
+                using (var msg = new MessageBoxWindow())
+                {
+                    msg.Title = errorTitle;
+                    msg.TxtTitle.Text = errorTitle;
+                    msg.TxtMessage.Text = errorMessage;
+                    msg.TitleBackgroundPanel.Background = Brushes.Red;
+                    msg.BorderBrush = Brushes.Red;
+                    msg.BtnCancel.Visibility = Visibility.Collapsed;
+
+                    msg.BtnOk.Focus();
+                    msg.ShowDialog();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(errorMessage, errorTitle);
+            }
+        }
+
+        /// <summary>
+        /// Displays a warning message box
+        /// </summary>
+        /// <param name="warningMessage">The warning message to display</param>
+        public static void ShowWarning(string warningMessage)
+        {
+            try
+            {
+                using (var msg = new MessageBoxWindow())
+                {
+                    msg.Title = "Warning";
+                    msg.TxtTitle.Text = "Warning";
+                    msg.TxtMessage.Text = warningMessage;
+                    msg.TitleBackgroundPanel.Background = Brushes.Orange;
+                    msg.BorderBrush = Brushes.Orange;
+                    msg.BtnCancel.Visibility = Visibility.Collapsed;
+
+                    msg.BtnOk.Focus();
+                    msg.ShowDialog();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(warningMessage);
+            }
+        }
+
+        /// <summary>
+        /// Displays a warning message box
+        /// </summary>
+        /// <param name="warningMessage">The warning message to display</param>
+        /// <param name="warningTitle">The title of the error message box</param>
+        public static void ShowWarning(string warningMessage, string warningTitle)
+        {
+            try
+            {
+                using (var msg = new MessageBoxWindow())
+                {
+                    msg.Title = warningTitle;
+                    msg.TxtTitle.Text = warningTitle;
+                    msg.TxtMessage.Text = warningMessage;
+                    msg.TitleBackgroundPanel.Background = Brushes.Orange;
+                    msg.BorderBrush = Brushes.Orange;
+                    msg.BtnCancel.Visibility = Visibility.Collapsed;
+
+                    msg.BtnOk.Focus();
+                    msg.ShowDialog();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(warningMessage, warningTitle);
             }
         }
 
