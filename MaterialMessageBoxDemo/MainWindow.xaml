@@ -24,6 +24,7 @@
             <Button Content="Show Error Message Message Box" Click="ShowErrorMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
             <Button Content="Show Custom Styled Message Box" Click="ShowCustomMessageBox_OnClick" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignPaper}" Margin="12"/>
             <Button Content="Show Message Box with Cancel Button" Click="ShowMessageBoxWithCancelButton_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
+            <Button Content="Show Simple RTL Message Box" Click="ShowSimpleRTLMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
             <TextBlock Name="TxtResult" HorizontalAlignment="Center" Margin="12" Foreground="{DynamicResource IdealForegroundColorBrush}"/>
         </StackPanel>
     </Grid>
