@@ -39,7 +39,7 @@ namespace BespokeFusion
             }
             catch (Exception ex)
             {
-                string error = ex.Message;
+                _ = ex.Message;
             }
         }
     }
