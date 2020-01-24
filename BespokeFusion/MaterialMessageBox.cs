@@ -187,9 +187,9 @@ namespace BespokeFusion
         /// Displays a message box with a cancel button
         /// </summary>
         /// <param name="message">The message to display</param>
-        /// <param name="IsRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
+        /// <param name="isRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
         /// <returns>Message box Result OK or CANCEL</returns>
-        public static MessageBoxResult ShowWithCancel(string message, bool IsRTL = false)
+        public static MessageBoxResult ShowWithCancel(string message, bool isRTL = false)
         {
             try
             {
@@ -200,7 +200,7 @@ namespace BespokeFusion
                     msg.TxtMessage.Text = message;
                     msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                     msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                    if (IsRTL)
+                    if (isRTL)
                     {
                         msg.FlowDirection = FlowDirection.RightToLeft;
                     }
@@ -221,9 +221,9 @@ namespace BespokeFusion
         /// </summary>
         /// <param name="message">The message to display</param>
         /// <param name="title">The title of the message box</param>
-        /// <param name="IsRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
+        /// <param name="isRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
         /// <returns>Message box Result OK or CANCEL</returns>
-        public static MessageBoxResult ShowWithCancel(string message, string title, bool IsRTL = false)
+        public static MessageBoxResult ShowWithCancel(string message, string title, bool isRTL = false)
         {
             try
             {
@@ -234,7 +234,7 @@ namespace BespokeFusion
                     msg.TxtMessage.Text = message;
                     msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
                     msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                    if (IsRTL)
+                    if (isRTL)
                     {
                         msg.FlowDirection = FlowDirection.RightToLeft;
                     }
@@ -255,9 +255,9 @@ namespace BespokeFusion
         /// </summary>
         /// <param name="message">The message to display</param>
         /// <param name="isError">If the message is an error</param>
-        /// <param name="IsRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
+        /// <param name="isRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
         /// <returns>Message box Result OK or CANCEL</returns>
-        public static MessageBoxResult ShowWithCancel(string message, bool isError, bool IsRTL = false)
+        public static MessageBoxResult ShowWithCancel(string message, bool isError, bool isRTL = false)
         {
             try
             {
@@ -272,7 +272,7 @@ namespace BespokeFusion
                     msg.BorderBrush = isError
                         ? Brushes.Red
                         : new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                    if (IsRTL)
+                    if (isRTL)
                     {
                         msg.FlowDirection = FlowDirection.RightToLeft;
                     }
