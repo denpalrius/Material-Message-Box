@@ -8,24 +8,28 @@
     xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     mc:Ignorable="d" 
-    TitleCaps="False"
+    TitleCharacterCasing="Normal"
     WindowState="Maximized"
-    TitleForeground="{DynamicResource MaterialDesignPaper}"
-    WindowTitleBrush="{DynamicResource AccentColorBrush}"
-    BorderBrush="{DynamicResource AccentColorBrush}"
-    Foreground="{DynamicResource MaterialDesignPaper}"
     Title="Material Design Message Box" Height="350" Width="525">
-    
+
     <Grid>
-        <StackPanel>
-            <TextBlock Foreground="{DynamicResource AccentColorBrush}" FontSize="20px" Margin="0,12" HorizontalAlignment="Center">Material Design Message Box Demo</TextBlock>
-            <Rectangle Height="1" Fill="AliceBlue"></Rectangle>
-            <Button Content="Show Simple Message Box" Click="ShowSimpleMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
-            <Button Content="Show Error Message Message Box" Click="ShowErrorMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
-            <Button Content="Show Custom Styled Message Box" Click="ShowCustomMessageBox_OnClick" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignPaper}" Margin="12"/>
-            <Button Content="Show Message Box with Cancel Button" Click="ShowMessageBoxWithCancelButton_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
-            <Button Content="Show Simple RTL Message Box" Click="ShowSimpleRTLMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
-            <TextBlock Name="TxtResult" HorizontalAlignment="Center" Margin="12" Foreground="{DynamicResource IdealForegroundColorBrush}"/>
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="20px" Margin="0,12" HorizontalAlignment="Center">Material Design Message Box Demo</TextBlock>
+        <Rectangle Height="1" Fill="AliceBlue" Grid.Row="1"/>
+        <Button Content="Show Simple Message Box" Grid.Row="2" Click="ShowSimpleMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
+        <Button Content="Show Error Message Message Box" Grid.Row="3" Click="ShowErrorMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
+        <Button Content="Show Custom Styled Message Box" Grid.Row="4" Click="ShowCustomMessageBox_OnClick" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignPaper}" Margin="12"/>
+        <Button Content="Show Message Box with Cancel Button" Grid.Row="5" Click="ShowMessageBoxWithCancelButton_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
+        <Button Content="Show Simple RTL Message Box" Grid.Row="6" Click="ShowSimpleRTLMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
+        <TextBlock Name="TxtResult" Grid.Row="7" HorizontalAlignment="Center" Margin="12"/>
     </Grid>
 </metro:MetroWindow>
