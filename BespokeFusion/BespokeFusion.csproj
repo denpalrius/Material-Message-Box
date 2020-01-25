@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net45;netcoreapp3.0</TargetFrameworks>
+    <TargetFrameworks>net452;net462;net472;net48;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ProjectTypeGuids>{0ED6E862-BD5D-4FBB-A421-70DCE06D8859};{7332AA71-55DD-49B5-980A-73AE5A941ADF}</ProjectTypeGuids>
     <Product>Material Message Box</Product>
@@ -9,18 +9,18 @@
     <ExtrasEnableWpfProjectSetup>true</ExtrasEnableWpfProjectSetup>
     <PackageId>BespokeFusion</PackageId>
     <Description>Material Message Box for WPF and Silverlight</Description>
-    <Copyright>Copyright ©  2019 Bespoke Fusion</Copyright>
+    <Copyright>Copyright © 2020 Bespoke Fusion</Copyright>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <FileVersion>3.0.0.0</FileVersion>
     <Version>3.0.0</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ControlzEx" Version="4.2.1" />
-    <PackageReference Include="MahApps.Metro" Version="2.0.0-alpha0660" />
-    <PackageReference Include="MaterialDesignColors" Version="1.2.2" />
-    <PackageReference Include="MaterialDesignThemes" Version="3.0.1" />
-    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.0" />
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
+    <PackageReference Include="ControlzEx" Version="4.2.*" />
+    <PackageReference Include="MahApps.Metro" Version="2.0.0-*" />
+    <PackageReference Include="MaterialDesignColors" Version="1.2.*" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.0.*" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.*" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.*" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
