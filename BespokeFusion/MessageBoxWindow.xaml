@@ -33,7 +33,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" x:Name="TitleBackgroundPanel" x:FieldModifier="public" Background="{DynamicResource PrimaryHueDarkBrush}">
+        <Grid Grid.Row="0" x:Name="TitleBackgroundPanel" x:FieldModifier="public" Background="{DynamicResource PrimaryHueDarkBrush}" MouseLeftButtonDown="TitleBackgroundPanel_MouseLeftButtonDown">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
