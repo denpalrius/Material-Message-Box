@@ -1,14 +1,12 @@
-﻿<metro:MetroWindow
+﻿<Window
     x:Class="MaterialMessageBoxDemo.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:local="clr-namespace:MaterialMessageBoxDemo"
-    xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     mc:Ignorable="d" 
-    TitleCharacterCasing="Normal"
+    Background="{DynamicResource MaterialDesignPaper}"
+    BorderBrush="{DynamicResource SecondaryHueDarkBrush}"
     WindowState="Maximized"
     Title="Material Design Message Box" Height="350" Width="525">
 
@@ -32,4 +30,4 @@
         <Button Content="Show Simple RTL Message Box" Grid.Row="6" Click="ShowSimpleRTLMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
         <TextBlock Name="TxtResult" Grid.Row="7" HorizontalAlignment="Center" Margin="12"/>
     </Grid>
-</metro:MetroWindow>
+</Window>
