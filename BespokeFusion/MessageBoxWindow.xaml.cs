@@ -42,5 +42,10 @@ namespace BespokeFusion
                 _ = ex.Message;
             }
         }
+
+        private void TitleBackgroundPanel_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 }

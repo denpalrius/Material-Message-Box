@@ -1,43 +1,30 @@
-﻿<metro:MetroWindow
+﻿<Window
     x:Class="BespokeFusion.MessageBoxWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     Title="MessageBoxWindow"
     Topmost="True"
     FontSize="14" 
-    ShowCloseButton="False"
     VerticalAlignment="Center"
     ResizeMode="NoResize"
-    ShowTitleBar="False"
     WindowStyle="None"
     Background="{DynamicResource MaterialDesignPaper}"
-    BorderBrush="{DynamicResource AccentColorBrush}"
-    xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    BorderBrush="{DynamicResource PrimaryHueDarkBrush}"
     BorderThickness="4"
     WindowStartupLocation="CenterScreen"
     Width="500"
     Height="240">
-    
-    <metro:MetroWindow.Resources>
-        <ResourceDictionary>
-            <SolidColorBrush x:Key="AccentColorBrush" Color="{DynamicResource Primary500}"/>
 
+    <Window.Resources>
+        <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!-- Material Design -->
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="DeepPurple" SecondaryColor="Lime" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.LightBlue.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Green.xaml" />
-                
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBox.xaml" />
-           
-            
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </metro:MetroWindow.Resources>
+    </Window.Resources>
 
     <Grid Name="MainContentControl" x:FieldModifier="public">
         <Grid.RowDefinitions>
@@ -46,7 +33,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" x:Name="TitleBackgroundPanel" x:FieldModifier="public" Background="{DynamicResource AccentColorBrush}">
+        <Grid Grid.Row="0" x:Name="TitleBackgroundPanel" x:FieldModifier="public" Background="{DynamicResource PrimaryHueDarkBrush}" MouseLeftButtonDown="TitleBackgroundPanel_MouseLeftButtonDown">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
@@ -73,6 +60,6 @@
                 <Button x:FieldModifier="public"  Name="BtnOk" Click="BtnOk_OnClick" Foreground="{DynamicResource MaterialDesignPaper}"  Content="Ok" Width="100" Padding="24,5" />
                 <Button x:FieldModifier="public"  Name="BtnCancel" Click="BtnCancel_OnClick" Content="Cancel"  Foreground="{DynamicResource MaterialDesignPaper}" Width="100" Background="DimGray" Padding="24,5" Margin="24,0,0,0"/>
             </StackPanel>
-            </Grid>
-    </Grid>    
-</metro:MetroWindow>
+        </Grid>
+    </Grid>
+</Window>
