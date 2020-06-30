@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net452;net462;net472;net48;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net462;net472;net48;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ProjectTypeGuids>{0ED6E862-BD5D-4FBB-A421-70DCE06D8859};{7332AA71-55DD-49B5-980A-73AE5A941ADF}</ProjectTypeGuids>
     <Product>Material Message Box</Product>
@@ -15,9 +15,9 @@
     <Version>3.0.0</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MaterialDesignColors" Version="1.2.*" />
-    <PackageReference Include="MaterialDesignThemes" Version="3.0.*" />
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.*" />
+    <PackageReference Include="MaterialDesignColors" Version="1.2.6" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
