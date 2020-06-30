@@ -10,13 +10,13 @@
     <PackageId>BespokeFusion</PackageId>
     <Description>Material Message Box for WPF and Silverlight</Description>
     <Copyright>Copyright © 2020 Bespoke Fusion</Copyright>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <FileVersion>3.0.0.0</FileVersion>
-    <Version>3.0.0</Version>
+    <AssemblyVersion>3.1.3.0</AssemblyVersion>
+    <FileVersion>3.1.3.0</FileVersion>
+    <Version>3.1.3</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MaterialDesignColors" Version="1.2.6" />
-    <PackageReference Include="MaterialDesignThemes" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
+    <PackageReference Include="MaterialDesignColors" Version="1.2.*" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.1.*" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.*" />
   </ItemGroup>
 </Project>
