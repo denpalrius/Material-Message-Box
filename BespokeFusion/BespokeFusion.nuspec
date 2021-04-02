@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/denpalrius/Material-Message-Box</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/denpalrius/Material-Message-Box/master/BespokeFusion/Assets/Notification-Blue.png</iconUrl>
+    <description>$description$</description>
+    <releaseNotes>Updated dependencies</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Material MessageBox WPF Silverlight</tags>
+  </metadata>
+</package>
