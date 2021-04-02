@@ -1,4 +1,4 @@
-# Material Message Box
+# WPF Material Message Box
 
 A WPF Message Box implementing material design
 
@@ -35,6 +35,13 @@ MaterialMessageBox.Show("Your cool message here", "The awesome message title");
 ```
 ![Simple Message](./MaterialMessageBoxDemo/Screenshots/Simple-Message-Box.png?raw=true "Creating a simple message box")
 
+> Show a message box with RTL support
+
+```c#
+MaterialMessageBox.Show("Your cool message here", "The awesome message title", true);
+```
+![message box with RTL support](./MaterialMessageBoxDemo/Screenshots/Rtl-Message-Box.png?raw=true "Creating a message box with RTL support")
+
 > Showing an error message
 
 ```c#            
@@ -42,6 +49,12 @@ MaterialMessageBox.ShowError(@"This is an error message");
 ```
 ![Error Message](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Error-Message-Box.png)
 
+> Showing an error message
+
+```c#            
+MaterialMessageBox.ShowError(@"This is an error message");
+```
+![Error Message](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Error-Message-Box.png)
 
 > Capturing Message Box Results
 
@@ -53,8 +66,8 @@ var result = MaterialMessageBox.ShowWithCancel($"This is a simple message with a
 
 > Styling a message box
 
-```c#    
-var msg = new CustomMaterialMessageBox
+``` c#
+CustomMaterialMessageBox msg = new CustomMaterialMessageBox
 {
     TxtMessage = { Text = "Do you like white wine?", Foreground = Brushes.White },
     TxtTitle = { Text = "This is too cool", Foreground = Brushes.White },
@@ -67,7 +80,7 @@ var msg = new CustomMaterialMessageBox
 };
 
 msg.Show();
-var results = msg.Result;
+MessageBoxResult results = msg.Result;
 ```
 ![Capturing Message Box Results](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Styled-Message-Box.png)
 
@@ -77,7 +90,7 @@ If you've improved Material Message Box and think that other people would enjoy 
 
 * You could always contact me through Email for any feature or issue. :star:
 
-* You need [Visual Studio 2015 Community/Enterprise Edition](<https://www.visualstudio.com/>) to build the solution.
+* You need [Visual Studio 2015 Community/Enterprise Edition](<https://www.visualstudio.com/>) (upwards) to build and test the solution.
 
 
 ## :sparkle: Toolkits used
@@ -91,7 +104,7 @@ I have implemented these awesome toolkits while creating this control. Hands up 
 ## :sparkle: Licence
 The MIT License (MIT)
 
-Copyright (c) 2016, Bespoke Fusion
+Copyright (c) 2021, Bespoke Fusion
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
