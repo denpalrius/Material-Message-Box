@@ -24,10 +24,10 @@
         <TextBlock FontSize="20px" Margin="0,12" HorizontalAlignment="Center">Material Design Message Box Demo</TextBlock>
         <Rectangle Height="1" Fill="AliceBlue" Grid.Row="1"/>
         <Button Content="Show Simple Message Box" Grid.Row="2" Click="ShowSimpleMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
-        <Button Content="Show Error Message Message Box" Grid.Row="3" Click="ShowErrorMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
-        <Button Content="Show Custom Styled Message Box" Grid.Row="4" Click="ShowCustomMessageBox_OnClick" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignPaper}" Margin="12"/>
+        <Button Content="Show Simple RTL Message Box" Grid.Row="3" Click="ShowSimpleRTLMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
+        <Button Content="Show Error Message Message Box" Grid.Row="4" Click="ShowErrorMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
         <Button Content="Show Message Box with Cancel Button" Grid.Row="5" Click="ShowMessageBoxWithCancelButton_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
-        <Button Content="Show Simple RTL Message Box" Grid.Row="6" Click="ShowSimpleRTLMessageBox_OnClick" Foreground="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Center" Margin="12"/>
+        <Button Content="Show Custom Styled Message Box" Grid.Row="6" Click="ShowCustomMessageBox_OnClick" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesignPaper}" Margin="12"/>
         <TextBlock Name="TxtResult" Grid.Row="7" HorizontalAlignment="Center" Margin="12"/>
     </Grid>
 </Window>

@@ -17,7 +17,12 @@ namespace MaterialMessageBoxDemo
 
         private void ShowSimpleMessageBox_OnClick(object sender, RoutedEventArgs e)
         {
-            MaterialMessageBox.Show($"This is a simple message\n\nIs'nt it cool\n.\n.\nYou could even scroll!!!\nd\no\no\no\no\no\nw\nn", "Message Box Title");
+            MaterialMessageBox.Show($"This is a simple message\n\nIs'nt it cool !!\n.\n.\nYou could even scroll!!!\nd\no\no\no\no\no\nw\nn", "Message Box Title");
+        }
+        private void ShowSimpleRTLMessageBox_OnClick(object sender, RoutedEventArgs e)
+        {
+            string content = $"This is a simple message with RTL support {Environment.NewLine}هذه رسالة بسيطة{Environment.NewLine}{Environment.NewLine}يمكنك حتى التمرير !!!";
+            MaterialMessageBox.Show(message: content, "RTL Message Box Title", true);
         }
         private void ShowErrorMessageBox_OnClick(object sender, RoutedEventArgs e)
         {
@@ -34,8 +39,9 @@ namespace MaterialMessageBoxDemo
             //You should add a reference to the mahApps.Metro available at http://mahapps.com/
             //You can create this as a static class and reuse it all over your app
 
-            var msg = new CustomMaterialMessageBox
+            CustomMaterialMessageBox msg = new CustomMaterialMessageBox
             {
+                Title = "This is too cool",
                 TxtMessage = { Text = "Do you like white wine?", Foreground = Brushes.White },
                 TxtTitle = { Text = "This is too cool", Foreground = Brushes.White },
                 BtnOk = { Content = "Yes" },
@@ -46,13 +52,8 @@ namespace MaterialMessageBoxDemo
             };
 
             msg.Show();
-            var results = msg.Result;
+            MessageBoxResult results = msg.Result;
             TxtResult.Text = $"Message Box Result is: {results}";
-        }
-
-        private void ShowSimpleRTLMessageBox_OnClick(object sender, RoutedEventArgs e)
-        {
-            MaterialMessageBox.Show($"This is a simple message{Environment.NewLine}هذه رسالة بسيطة{Environment.NewLine}{Environment.NewLine}Is'nt it cool\n.\n.\nYou could even scroll!!!\nd\no\no\no\no\no\nw\nn", "Message Box Title", true);
         }
     }
 }
