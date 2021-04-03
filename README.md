@@ -19,10 +19,15 @@ A WPF Message Box implementing material design
 The message box has the following custom features:
 
 :white_check_mark: Material Theme design
+
 :white_check_mark: Custom styles for border window, message foreground and background, title foreground and background, border, etc
+
 :white_check_mark: Button to copy message box details to clipboard
+
 :white_check_mark: Scrollable message box content
+
 :white_check_mark: Right to left (RTL) support
+
 :white_check_mark: Message content is .NET UIElement which can host any content
 
 ## :sparkle: Installing
