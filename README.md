@@ -14,6 +14,19 @@ A WPF Message Box implementing material design
 
 ![Nuget](https://img.shields.io/nuget/dt/MaterialMessageBox?label=nuget%20downloads)
 
+## :sparkle: Main Features
+
+The message box has the following custom features:
+
+:white_check_mark: Material Theme design
+:white_check_mark: Custom styles for border window, message foreground and background, title foreground and background, border, etc
+:white_check_mark: Button to copy message box details to clipboard
+:white_check_mark: Scrollable message box content
+:white_check_mark: Right to left (RTL) support
+:white_check_mark: Message content is .NET UIElement which can host any content
+
+## :sparkle: Installing
+
 :arrow_forward: [Download from Nuget ☁⤵](https://www.nuget.org/packages/MaterialMessageBox/)
 
 :arrow_forward: Install from Package manager Console
@@ -28,21 +41,7 @@ Or, if using `dotnet`
 $ dotnet add package MaterialMessageBox
 ```
 
-## :sparkle: Main Features
-
-The message box has the following custom features:
-
-:white_check_mark: Material Theme design
-
-:white_check_mark: Custom styles for border window, message foreground and background, title foreground and background, border, etc
-
-:white_check_mark: Button to copy message box details to clipboard
-
-:white_check_mark: Scrollable message box content
-
-:white_check_mark: Message content is .NET UIElement which can host any content
-
-## :sparkle: Usage
+## :sparkle: Usage (Screenshots)
 
 > Creating a simple message box
 
@@ -105,6 +104,13 @@ MessageBoxResult results = msg.Result;
 
 ![Capturing Message Box Results](https://raw.github.com/denpalrius/Material-Message-Box/master/MaterialMessageBoxDemo/Screenshots/Styled-Message-Box.png)
 
+## :sparkle: Toolkits used
+
+This library is built on top of the following toolkits:
+
+- [Material Design In XAML Toolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) - Comprehensive and easy to use Material Design theme and control library for the Windows desktop.
+- [Material Design Colors](https://github.com/MahApps/MahApps.Metro) - ResourceDictionary instances containing standard Google Material Design swatches, for inclusion in a XAML application.
+
 ## :sparkle: Contributing to this project
 
 If you've improved Material Message Box and think that other people would enjoy it, submit a pull request. Anyone and everyone is welcome to contribute.
@@ -112,13 +118,6 @@ If you've improved Material Message Box and think that other people would enjoy 
 - You could always contact me through Email for any feature or issue. :star:
 
 - You need [Visual Studio 2015 Community/Enterprise Edition](https://www.visualstudio.com/) (upwards) to build and test the solution.
-
-## :sparkle: Toolkits used
-
-This library is built on top of the following toolkits:
-
-- [Material Design In XAML Toolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) - Comprehensive and easy to use Material Design theme and control library for the Windows desktop.
-- [Material Design Colors](https://github.com/MahApps/MahApps.Metro) - ResourceDictionary instances containing standard Google Material Design swatches, for inclusion in a XAML application.
 
 ---
 
