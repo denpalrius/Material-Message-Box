@@ -8,7 +8,6 @@ If you've improved Material Message Box and think that other people would enjoy 
 
 
 ## :sparkle: Toolkits used
-I have implemented these awesome toolkits while creating this control.
-
-- [mahApps.Metro](https://github.com/MahApps/MahApps.Metro) A toolkit for creating Metro/Modern UI styled WPF apps
-- [MaterialDesignInXamlToolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) Google Material Design in XAML & WPF, for C# & VB.Net
+This library is built on top of the following toolkits:
+- [Material Design In XAML Toolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) - Comprehensive and easy to use Material Design theme and control library for the Windows desktop.
+- [Material Design Colors](https://github.com/MahApps/MahApps.Metro) - ResourceDictionary instances containing standard Google Material Design swatches, for inclusion in a XAML application.
