@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BespokeFusion", "BespokeFusion\BespokeFusion.csproj", "{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BespokeFusion", "BespokeFusion\BespokeFusion.csproj", "{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialMessageBoxDemo", "MaterialMessageBoxDemo\MaterialMessageBoxDemo.csproj", "{B03507A0-F8E9-44EE-8407-526C7D62C588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialMessageBoxDemo", "MaterialMessageBoxDemo\MaterialMessageBoxDemo.csproj", "{B03507A0-F8E9-44EE-8407-526C7D62C588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +13,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ED6E862-BD5D-4FBB-A421-70DCE06D8859}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B03507A0-F8E9-44EE-8407-526C7D62C588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A6EE166-869A-4241-8CF9-6C080460E31A}
 	EndGlobalSection
 EndGlobal
