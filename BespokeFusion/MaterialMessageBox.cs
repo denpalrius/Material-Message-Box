@@ -15,7 +15,7 @@ namespace BespokeFusion
         /// <param name="isRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
         public static void Show(string message, bool isRTL = false)
         {
-            using (var msg = new MessageBoxWindow())
+            using (MessageBoxWindow msg = new MessageBoxWindow())
             {
                 msg.Title = MessageBoxTitle;
                 msg.TxtTitle.Text = MessageBoxTitle;
@@ -40,7 +40,7 @@ namespace BespokeFusion
         /// <param name="isRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
         public static void Show(string message, string title, bool isRTL = false)
         {
-            using (var msg = new MessageBoxWindow())
+            using (MessageBoxWindow msg = new MessageBoxWindow())
             {
                 msg.Title = title;
                 msg.TxtTitle.Text = title;
@@ -66,7 +66,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (var msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow())
                 {
                     msg.Title = "Error";
                     msg.TxtTitle.Text = "Error";
@@ -98,7 +98,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (var msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow())
                 {
                     msg.Title = errorTitle;
                     msg.TxtTitle.Text = errorTitle;
@@ -129,7 +129,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (var msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow())
                 {
                     msg.Title = "Warning";
                     msg.TxtTitle.Text = "Warning";
@@ -161,7 +161,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (var msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow())
                 {
                     msg.Title = warningTitle;
                     msg.TxtTitle.Text = warningTitle;
@@ -193,7 +193,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (var msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow())
                 {
                     msg.Title = MessageBoxTitle;
                     msg.TxtTitle.Text = MessageBoxTitle;
@@ -227,7 +227,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (var msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow())
                 {
                     msg.Title = title;
                     msg.TxtTitle.Text = title;
@@ -261,7 +261,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (var msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow())
                 {
                     msg.Title = MessageBoxTitle;
                     msg.TxtTitle.Text = MessageBoxTitle;
