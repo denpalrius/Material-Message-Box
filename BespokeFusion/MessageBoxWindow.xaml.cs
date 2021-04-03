@@ -29,6 +29,7 @@ namespace BespokeFusion
         public void Dispose()
         {
             Close();
+            GC.SuppressFinalize(this);
         }
 
         private void BtnCopyMessage_OnClick(object sender, RoutedEventArgs e)
