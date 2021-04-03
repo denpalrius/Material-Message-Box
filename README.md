@@ -4,6 +4,10 @@ A WPF Message Box implementing material design
 
 [![Actions Status](https://github.com/denpalrius/Material-Message-Box/workflows/.NET/badge.svg)](https://github.com/denpalrius/Material-Message-Box/actions/workflows/dotnet-lib.yml)
 
+[![Code quality score](https://www.code-inspector.com/project/20801/score/svg)](https://frontend.code-inspector.com/project/20801/dashboard)
+
+[![Code grade](https://www.code-inspector.com/project/20801/status/svg)](https://frontend.code-inspector.com/project/20801/dashboard)
+
 [![Release](https://img.shields.io/github/release/denpalrius/Material-Message-Box.svg)](https://github.com/denpalrius/Material-Message-Box/releases/latest?style=for-the-badge)
 
 ![Nuget](https://img.shields.io/nuget/v/MaterialMessageBox)
