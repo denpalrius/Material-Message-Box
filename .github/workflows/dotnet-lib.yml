@@ -2,29 +2,27 @@ name: .NET
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.x
-    - name: Restore library dependencies
-      run: dotnet restore .\BespokeFusion\BespokeFusion.csproj
-    - name: Restore demo app dependencies
-      run: dotnet restore .\MaterialMessageBoxDemo\MaterialMessageBoxDemo.csproj
-    - name: Build library
-      run: dotnet build .\BespokeFusion\BespokeFusion.csproj --no-restore --configuration Release
-    - name: Build demo app
-      run: dotnet build .\MaterialMessageBoxDemo\MaterialMessageBoxDemo.csproj --no-restore --configuration Release
-    - name: Package library
-      run: dotnet pack .\BespokeFusion\BespokeFusion.csproj --configuration Release
-
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - name: Restore library dependencies
+        run: dotnet restore .\BespokeFusion\BespokeFusion.csproj
+      - name: Restore demo app dependencies
+        run: dotnet restore .\MaterialMessageBoxDemo\MaterialMessageBoxDemo.csproj
+      - name: Build library
+        run: dotnet build .\BespokeFusion\BespokeFusion.csproj --no-restore --configuration Release
+      - name: Build demo app
+        run: dotnet build .\MaterialMessageBoxDemo\MaterialMessageBoxDemo.csproj --no-restore --configuration Release
+      - name: Package library
+        run: dotnet pack .\BespokeFusion\BespokeFusion.csproj --configuration Release
