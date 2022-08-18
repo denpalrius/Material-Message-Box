@@ -8,6 +8,8 @@ namespace BespokeFusion
     {
         private const string MessageBoxTitle = "Message";
 
+        public static bool UseApplicationResources { get; set; }
+
         /// <summary>
         /// Displays a message box with OK button
         /// </summary>
@@ -15,13 +17,16 @@ namespace BespokeFusion
         /// <param name="isRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
         public static void Show(string message, bool isRTL = false)
         {
-            using (MessageBoxWindow msg = new MessageBoxWindow())
+            using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
             {
                 msg.Title = MessageBoxTitle;
                 msg.TxtTitle.Text = MessageBoxTitle;
                 msg.TxtMessage.Text = message;
-                msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                if (!UseApplicationResources)
+                {
+                    msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                }
                 msg.BtnCancel.Visibility = Visibility.Collapsed;
                 if (isRTL)
                 {
@@ -40,13 +45,16 @@ namespace BespokeFusion
         /// <param name="isRTL">(Optional) If true the MessageBox FlowDirection will be RightToLeft</param>
         public static void Show(string message, string title, bool isRTL = false)
         {
-            using (MessageBoxWindow msg = new MessageBoxWindow())
+            using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
             {
                 msg.Title = title;
                 msg.TxtTitle.Text = title;
                 msg.TxtMessage.Text = message;
-                msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                if (!UseApplicationResources)
+                {
+                    msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                }
                 msg.BtnCancel.Visibility = Visibility.Collapsed;
                 if (isRTL)
                 {
@@ -66,7 +74,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (MessageBoxWindow msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
                 {
                     msg.Title = "Error";
                     msg.TxtTitle.Text = "Error";
@@ -98,7 +106,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (MessageBoxWindow msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
                 {
                     msg.Title = errorTitle;
                     msg.TxtTitle.Text = errorTitle;
@@ -129,7 +137,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (MessageBoxWindow msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
                 {
                     msg.Title = "Warning";
                     msg.TxtTitle.Text = "Warning";
@@ -161,7 +169,7 @@ namespace BespokeFusion
         {
             try
             {
-                using (MessageBoxWindow msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
                 {
                     msg.Title = warningTitle;
                     msg.TxtTitle.Text = warningTitle;
@@ -193,13 +201,16 @@ namespace BespokeFusion
         {
             try
             {
-                using (MessageBoxWindow msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
                 {
                     msg.Title = MessageBoxTitle;
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = message;
-                    msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                    msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    if (!UseApplicationResources)
+                    {
+                        msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                        msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    }
                     if (isRTL)
                     {
                         msg.FlowDirection = FlowDirection.RightToLeft;
@@ -227,13 +238,16 @@ namespace BespokeFusion
         {
             try
             {
-                using (MessageBoxWindow msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
                 {
                     msg.Title = title;
                     msg.TxtTitle.Text = title;
                     msg.TxtMessage.Text = message;
-                    msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                    msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    if (!UseApplicationResources)
+                    {
+                        msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                        msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    }
                     if (isRTL)
                     {
                         msg.FlowDirection = FlowDirection.RightToLeft;
@@ -261,17 +275,22 @@ namespace BespokeFusion
         {
             try
             {
-                using (MessageBoxWindow msg = new MessageBoxWindow())
+                using (MessageBoxWindow msg = new MessageBoxWindow(UseApplicationResources))
                 {
                     msg.Title = MessageBoxTitle;
                     msg.TxtTitle.Text = MessageBoxTitle;
                     msg.TxtMessage.Text = message;
-                    msg.TitleBackgroundPanel.Background = isError
-                        ? Brushes.Red
-                        : new SolidColorBrush(Color.FromRgb(3, 169, 244));
-                    msg.BorderBrush = isError
-                        ? Brushes.Red
-                        : new SolidColorBrush(Color.FromRgb(3, 169, 244));
+
+                    if (isError)
+                    {
+                        msg.TitleBackgroundPanel.Background = Brushes.Red;
+                        msg.BorderBrush = Brushes.Red;
+                    }
+                    else if (!UseApplicationResources)
+                    {
+                        msg.TitleBackgroundPanel.Background = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                        msg.BorderBrush = new SolidColorBrush(Color.FromRgb(3, 169, 244));
+                    }
                     if (isRTL)
                     {
                         msg.FlowDirection = FlowDirection.RightToLeft;
@@ -287,6 +306,5 @@ namespace BespokeFusion
                 return MessageBoxResult.Cancel;
             }
         }
-
     }
 }

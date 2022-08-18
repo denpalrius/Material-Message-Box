@@ -6,20 +6,25 @@ namespace BespokeFusion
     /// <summary>
     /// Interaction logic for MessageBoxWindow.xaml
     /// </summary>
-    public partial class MessageBoxWindow: IDisposable
+    public partial class MessageBoxWindow : IDisposable
     {
         public MessageBoxResult Result { get; set; }
 
-        public MessageBoxWindow()
+        public MessageBoxWindow(bool useApplicationResources = false)
         {
             InitializeComponent();
             Result = MessageBoxResult.Cancel;
+
+            if (Application.Current?.Resources is ResourceDictionary appResources)
+                Resources = appResources;
         }
+
         private void BtnOk_OnClick(object sender, RoutedEventArgs e)
         {
             Result = MessageBoxResult.OK;
             Close();
         }
+
         private void BtnCancel_OnClick(object sender, RoutedEventArgs e)
         {
             Result = MessageBoxResult.Cancel;
@@ -36,7 +41,7 @@ namespace BespokeFusion
         {
             try
             {
-               Clipboard.SetText(TxtMessage.Text);
+                Clipboard.SetText(TxtMessage.Text);
             }
             catch (Exception ex)
             {
