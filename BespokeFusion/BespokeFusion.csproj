@@ -16,7 +16,7 @@
     <Copyright>Copyright © 2021 Bespoke Fusion</Copyright>
     <AssemblyVersion>3.1.3.0</AssemblyVersion>
     <FileVersion>3.1.3.0</FileVersion>
-    <Version>4.0.2.1</Version>
+    <Version>4.0.2.2</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
@@ -29,7 +29,7 @@
     <Company>Bespoke Fusion</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>4.0.2.1 - MessageBox can now use the application resources instead of its own</PackageReleaseNotes>
+    <PackageReleaseNotes>4.0.2.2 - MessageBox can now use the application resources instead of its own</PackageReleaseNotes>
   </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
